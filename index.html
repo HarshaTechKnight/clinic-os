@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClinicOS — Digital OPD Queue System for Hospitals & Clinics in AP</title>
+  <meta name="description" content="Replace manual paper tokens with ClinicOS — automated digital queues, Telugu SMS notifications, offline mode. Built for Andhra Pradesh hospitals and clinics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Clinic<em>OS</em></a>
+
+    <ul class="nav-menu">
+      <li><a href="#hero"  class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About Us</a></li>
+      <li class="nav-item">
+        <button class="nav-dropdown-btn">
+          Products
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="dropdown">
+          <a href="#editions"><span>🏥</span> Hospital Edition</a>
+          <a href="#editions"><span>🩺</span> Clinic Edition</a>
+        </div>
+      </li>
+      <li><a href="#solution" class="nav-link">Features</a></li>
+      <li><a href="#pricing"  class="nav-link">Pricing</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="https://wa.me/917330937354?text=Hi%2C%20I%20want%20to%20schedule%20a%20ClinicOS%20demo" target="_blank" class="btn btn-primary nav-schedule">Schedule Demo</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#hero">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#editions">Hospital Edition</a>
+  <a href="#editions">Clinic Edition</a>
+  <a href="#solution">Features</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+  <div class="mobile-menu-cta">
+    <a href="https://wa.me/917330937354?text=Hi%2C%20I%20want%20to%20schedule%20a%20ClinicOS%20demo" target="_blank" class="btn btn-primary" style="justify-content:center;">Schedule Demo</a>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Now Available · Android App · Andhra Pradesh
+        </div>
+        <h1 class="hero-title">
+          Digital OPD Queue<br>
+          System for <span class="line-accent">Hospitals</span><br>
+          &amp; <span class="line-accent">Clinics</span>
+        </h1>
+        <p class="hero-sub">Replace manual <span class="line-cross">paper tokens</span> with automated digital queues. Patients receive SMS updates in Telugu. Staff manage flow from a simple Android app.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/917330937354?text=Hi%2C%20I%20want%20to%20book%20a%20free%20ClinicOS%20demo" target="_blank" class="btn btn-primary btn-lg">Book Free Demo →</a>
+          <a href="#pricing" class="btn btn-outline btn-lg">View Pricing</a>
+        </div>
+        <div class="hero-proof">
+          <div class="hero-proof-item"><strong>50+</strong> Facilities</div>
+          <span class="hero-proof-sep"></span>
+          <div class="hero-proof-item"><strong>10,000+</strong> Patients/month</div>
+          <span class="hero-proof-sep"></span>
+          <div class="hero-proof-item"><strong>Telugu</strong> First</div>
+          <span class="hero-proof-sep"></span>
+          <div class="hero-proof-item"><strong>DPDPA</strong> Compliant</div>
+        </div>
+      </div>
+
+      <!-- App Mockup -->
+      <div class="hero-visual">
+        <!-- Floating cards -->
+        <div class="float-card fc-1">
+          <span class="float-card-icon">📱</span>
+          <div class="float-card-text">
+            SMS Sent
+            <div class="float-card-label">Token #24 notified</div>
+          </div>
+        </div>
+        <div class="float-card fc-2">
+          <span class="float-card-icon">✅</span>
+          <div class="float-card-text">
+            Registered
+            <div class="float-card-label">Under 15 seconds</div>
+          </div>
+        </div>
+        <div class="float-card fc-3">
+          <span class="float-card-icon">📶</span>
+          <div class="float-card-text">
+            Offline Mode
+            <div class="float-card-label">Always works</div>
+          </div>
+        </div>
+
+        <div class="hero-phone-wrap">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ps-statusbar">
+                <span class="ps-time">9:41</span>
+                <div class="ps-icons">
+                  <span>●●●●</span><span>WiFi</span><span>🔋</span>
+                </div>
+              </div>
+              <div class="ps-header">
+                <div class="ps-header-logo">Clinic<em>OS</em></div>
+                <div class="ps-header-sub">OPD Queue Management</div>
+              </div>
+              <div class="ps-body">
+                <div class="ps-token-card">
+                  <div class="ps-token-label">Now Serving</div>
+                  <div class="ps-token-num">24</div>
+                  <div class="ps-token-status">● ACTIVE · General OPD</div>
+                </div>
+                <div class="ps-queue-row">
+                  <div>
+                    <div class="ps-queue-label">Patients Waiting</div>
+                    <div class="ps-queue-val">18 in queue</div>
+                  </div>
+                  <div>
+                    <div class="ps-queue-label">Est. Wait</div>
+                    <div class="ps-queue-val">~32 min</div>
+                  </div>
+                </div>
+                <div class="ps-sms-preview">
+                  <div class="ps-sms-hdr">📱 Last SMS sent</div>
+                  <div class="ps-sms-txt">మీ వంతు దగ్గర పడింది! Token 24 – 2 మంది తర్వాత.</div>
+                </div>
+                <button class="ps-next-btn">Next Patient →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TRUST STRIP
+══════════════════════════════════════════ -->
+<div id="trust">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <span class="trust-icon">🏥</span>
+      <div class="trust-text">
+        <div class="trust-num" data-counter="50">50</div>
+        <div class="trust-label">Healthcare Facilities</div>
+      </div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">👥</span>
+      <div class="trust-text">
+        <div class="trust-num" data-counter="10000">10,000</div>
+        <div class="trust-label">Patients Served Monthly</div>
+      </div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">📍</span>
+      <div class="trust-text">
+        <div class="trust-num" style="font-size:1rem;padding-top:4px;">Vijayawada, AP</div>
+        <div class="trust-label">Made in Andhra Pradesh</div>
+      </div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">🔒</span>
+      <div class="trust-text">
+        <div class="trust-num" style="font-size:1rem;padding-top:4px;">DPDPA</div>
+        <div class="trust-label">Data Privacy Compliant</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-inner">
+
+      <div class="about-img-placeholder">
+        <div class="about-img-inner">
+          <div style="font-size:4rem;">🏙️</div>
+          <p>CodingRippler Team<br>Vijayawada, Andhra Pradesh</p>
+        </div>
+        <div class="about-city">VJA</div>
+      </div>
+
+      <div class="about-content">
+        <div class="tag reveal">Our Story</div>
+        <h2 class="reveal d1">Built in Vijayawada,<br>for <em class="em-green">Andhra Pradesh</em></h2>
+        <p class="reveal d2" style="margin-top:16px;">CodingRippler Tech Private Limited is a startup founded with the mission of building digital infrastructure for underserved Indian markets. We personally visited hospitals and clinics across AP to understand the problem before building ClinicOS.</p>
+        <p class="reveal d2" style="margin-top:12px;">The technical talent that startups and growing businesses need is often locked inside large enterprises. We started CodingRippler to bridge that gap — helping ambitious healthcare teams build and scale real products without the overhead of a full in-house engineering team.</p>
+
+        <div class="about-stats reveal d3">
+          <div class="about-stat">
+            <div class="about-stat-num">2024</div>
+            <div class="about-stat-label">Founded in Vijayawada</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">AP First</div>
+            <div class="about-stat-label">Telugu-first product</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">30 min</div>
+            <div class="about-stat-label">Average setup time</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">0</div>
+            <div class="about-stat-label">Hardware required</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     PROBLEM
+══════════════════════════════════════════ -->
+<section id="problem" class="section">
+  <div class="container">
+    <div class="problem-inner">
+
+      <div class="problem-left">
+        <div class="tag reveal">The Challenge</div>
+        <h2 class="reveal d1">Hospitals Still Manage OPD Queues with <em class="em-amber">Paper Tokens</em></h2>
+        <p class="reveal d2">Walk into any government hospital in Vijayawada today and you'll find the same scene — crowded halls, confused patients, and overworked receptionists drowning in paperwork.</p>
+      </div>
+
+      <div class="problem-visual reveal d1">
+        <div class="prob-item">
+          <div class="prob-icon-box">⏳</div>
+          <div>
+            <h4>2–4 hour waits</h4>
+            <p>Patients sit in crowded halls with no information about when their turn arrives</p>
+          </div>
+        </div>
+        <div class="prob-item">
+          <div class="prob-icon-box">📄</div>
+          <div>
+            <h4>Paper token chaos</h4>
+            <p>Tokens get lost, misread, or skipped — no record, no recovery, no accountability</p>
+          </div>
+        </div>
+        <div class="prob-item">
+          <div class="prob-icon-box">😤</div>
+          <div>
+            <h4>Reception overload</h4>
+            <p>Staff spend half the day answering "When is my turn?" instead of registering patients</p>
+          </div>
+        </div>
+        <div class="prob-item">
+          <div class="prob-icon-box">🚶</div>
+          <div>
+            <h4>Crowded waiting areas</h4>
+            <p>Patients afraid to leave the waiting room — missing food, rest, or family</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SOLUTION
+══════════════════════════════════════════ -->
+<section id="solution" class="section">
+  <div class="container">
+    <div class="sol-header section-center">
+      <div class="tag reveal">The ClinicOS Solution</div>
+      <h2 class="reveal d1">A Simple Digital Platform<br>for <em class="em-green">Patient Flow</em></h2>
+      <p class="reveal d2" style="margin-top:14px;max-width:520px;margin-left:auto;margin-right:auto;">Works on any Android device. No hardware. No lengthy training required.</p>
+    </div>
+    <div class="sol-grid reveal d2">
+      <div class="sol-card">
+        <div class="sol-num">01</div>
+        <div class="sol-icon">📋</div>
+        <div class="sol-title">Digital Registration</div>
+        <p class="sol-desc">Patient record created in under 15 seconds. Phone number lookup retrieves existing records instantly.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-num">02</div>
+        <div class="sol-icon">🔢</div>
+        <div class="sol-title">Auto Token Generation</div>
+        <p class="sol-desc">Unique token per department per day. Auto-resets at midnight. No manual intervention ever needed.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-num">03</div>
+        <div class="sol-icon">📊</div>
+        <div class="sol-title">Live Queue Dashboard</div>
+        <p class="sol-desc">Staff see current + next patient instantly across all departments from one unified screen.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-num">04</div>
+        <div class="sol-icon">📱</div>
+        <div class="sol-title">SMS Notifications</div>
+        <p class="sol-desc">Patients get 3 automatic updates in Telugu or English — no staff action required at any step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════ -->
+<section id="how" class="section">
+  <div class="container">
+    <div class="section-center">
+      <div class="tag reveal">How It Works</div>
+      <h2 class="reveal d1">From Registration to Consultation —<br><em class="em-green">Fully Digital</em></h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal d1">
+        <div class="step-num-wrap"><div class="step-num">1</div></div>
+        <div class="step-icon">📱</div>
+        <h3>Register</h3>
+        <p>Receptionist enters the patient's phone number. Existing patients are found instantly. New patients registered in seconds.</p>
+        <div class="step-time">⚡ Under 15 seconds</div>
+      </div>
+      <div class="step-card reveal d2">
+        <div class="step-num-wrap"><div class="step-num">2</div></div>
+        <div class="step-icon">💬</div>
+        <h3>Queue</h3>
+        <p>Patient receives SMS with their token number and estimated wait time. They can wait anywhere — no need to stay in the hall.</p>
+        <div class="step-time">📲 Instant SMS in Telugu</div>
+      </div>
+      <div class="step-card reveal d3">
+        <div class="step-num-wrap"><div class="step-num">3</div></div>
+        <div class="step-icon">🩺</div>
+        <h3>Consult</h3>
+        <p>Doctor's assistant sees the live queue. Patient is called via SMS when their turn arrives. Seamless handoff, every time.</p>
+        <div class="step-time">✅ Zero paper, zero confusion</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     BENEFITS
+══════════════════════════════════════════ -->
+<section id="benefits" class="section">
+  <div class="container">
+    <div class="section-center">
+      <div class="tag reveal">Why Hospitals Choose ClinicOS</div>
+      <h2 class="reveal d1">Real Impact from <em class="em-green">Day One</em></h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="ben-card reveal d1">
+        <div class="ben-icon">🕐</div>
+        <div class="ben-metric">60%</div>
+        <h3>Reduce Waiting Time</h3>
+        <p>Patients get SMS updates so they can step out and return when called — no more blind waiting in crowded halls.</p>
+      </div>
+      <div class="ben-card reveal d2">
+        <div class="ben-icon">👥</div>
+        <div class="ben-metric">0</div>
+        <h3>Organised Waiting Rooms</h3>
+        <p>Digital queues eliminate confusion and crowding. Your hall becomes calm, spacious, and manageable within one day.</p>
+      </div>
+      <div class="ben-card reveal d3">
+        <div class="ben-icon">⚡</div>
+        <div class="ben-metric">10s</div>
+        <h3>Faster Reception</h3>
+        <p>Registration takes under 10 seconds for returning patients. Your receptionist handles far more volume without stress.</p>
+      </div>
+      <div class="ben-card reveal d4">
+        <div class="ben-icon">😊</div>
+        <div class="ben-metric">↑</div>
+        <h3>Better Patient Experience</h3>
+        <p>Patients can step out, have tea, rest — and return exactly when their turn is near. Zero missed appointments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     EDITIONS
+══════════════════════════════════════════ -->
+<section id="editions" class="section">
+  <div class="container">
+    <div class="section-center">
+      <div class="tag reveal">Two Editions</div>
+      <h2 class="reveal d1">Built Differently for<br><em class="em-amber">Different</em> Healthcare Settings</h2>
+      <p class="reveal d2" style="margin-top:14px;max-width:520px;margin-left:auto;margin-right:auto;">One size fits no one. Choose the edition that matches your facility's daily volume and workflow.</p>
+    </div>
+    <div class="editions-grid">
+
+      <!-- Hospital -->
+      <div class="ed-card hosp reveal d1">
+        <div class="ed-watermark">H</div>
+        <div class="ed-badge">🏥 Hospital Edition</div>
+        <h3>For Large Hospitals</h3>
+        <p class="ed-tagline">Government Hospitals, District Hospitals, PHCs, Polyclinics</p>
+        <div class="ed-meta">
+          <div class="ed-meta-item">
+            <div class="ed-meta-label">Daily Volume</div>
+            <div class="ed-meta-val">100 – 2,000+ patients</div>
+          </div>
+          <div class="ed-meta-item">
+            <div class="ed-meta-label">Queue Type</div>
+            <div class="ed-meta-val">Multi-department (30+)</div>
+          </div>
+        </div>
+        <div class="ed-feats">
+          <div class="ed-feat"><div class="ed-check">✓</div>Digital patient registration — phone-first</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Multi-department queue management</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>SMS token notifications (Telugu + English)</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Doctor's Assistant live screen</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Offline mode with automatic sync</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Analytics dashboard</div>
+        </div>
+        <div class="ed-price-row">
+          <span class="ed-from">from</span>
+          <span class="ed-amount">₹2,999</span>
+          <span class="ed-period">/ month · per 3 counters</span>
+        </div>
+        <a href="https://wa.me/917330937354?text=I%27m%20interested%20in%20ClinicOS%20Hospital%20Edition" target="_blank" class="btn btn-ghost">Learn More →</a>
+      </div>
+
+      <!-- Clinic -->
+      <div class="ed-card clin reveal d2">
+        <div class="ed-watermark">C</div>
+        <div class="ed-badge">🩺 Clinic Edition</div>
+        <h3>For Independent Clinics</h3>
+        <p class="ed-tagline">Private Clinics & Solo Doctors · Governorpet, Labbipet, Benz Circle, Auto Nagar</p>
+        <div class="ed-meta">
+          <div class="ed-meta-item">
+            <div class="ed-meta-label">Daily Volume</div>
+            <div class="ed-meta-val">10 – 200 patients</div>
+          </div>
+          <div class="ed-meta-item">
+            <div class="ed-meta-label">Queue Type</div>
+            <div class="ed-meta-val">Single-doctor queue</div>
+          </div>
+        </div>
+        <div class="ed-feats">
+          <div class="ed-feat"><div class="ed-check">✓</div>Digital patient registration</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Single-queue management</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>SMS token notifications (Telugu + English)</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Digital prescriptions with templates</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Billing & GST invoices, UPI QR</div>
+          <div class="ed-feat"><div class="ed-check">✓</div>Patient history & document storage</div>
+        </div>
+        <div class="ed-price-row">
+          <span class="ed-from">from</span>
+          <span class="ed-amount">₹999</span>
+          <span class="ed-period">/ month · 30-day free trial</span>
+        </div>
+        <a href="https://wa.me/917330937354?text=I%27m%20interested%20in%20ClinicOS%20Clinic%20Edition" target="_blank" class="btn btn-outline-amber">Learn More →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SMS SECTION
+══════════════════════════════════════════ -->
+<section id="sms" class="section">
+  <div class="container">
+    <div class="sms-inner">
+
+      <div class="sms-left">
+        <div class="tag reveal">Telugu SMS</div>
+        <h2 class="reveal d1">Patients Get SMS Updates<br>in <em class="em-amber">Telugu</em></h2>
+        <p class="reveal d2">Three automatic messages reach every patient at exactly the right moment. No staff action required. No missed turns.</p>
+
+        <div class="sms-table-wrap reveal d3">
+          <table class="sms-table">
+            <thead>
+              <tr>
+                <th>Trigger</th>
+                <th>Message Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sms-trigger">On Joining</td>
+                <td class="sms-msg-txt">నమస్కారం! మీ టోకెన్ నంబర్ 24. మీ ముందు 6 మంది ఉన్నారు. అంచనా సమయం: 30 నిమిషాలు.</td>
+              </tr>
+              <tr>
+                <td class="sms-trigger">2 Before Turn</td>
+                <td class="sms-msg-txt">మీ వంతు దగ్గర పడింది! 2 మంది తర్వాత మీ నంబర్. దయచేసి క్లినిక్ చేరుకోండి.</td>
+              </tr>
+              <tr>
+                <td class="sms-trigger">Your Turn</td>
+                <td class="sms-msg-txt">మీ వంతు వచ్చింది! Token 24 – దయచేసి లోపలికి రండి.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:10px;font-style:italic;">English option also available</p>
+        </div>
+      </div>
+
+      <div class="sms-bubbles reveal d2">
+        <div class="sms-bub">
+          <div class="sms-avatar">👤</div>
+          <div class="sms-bubble-content">
+            <div class="sms-bub-from">📱 CLINICOS · On joining queue</div>
+            <div class="sms-bub-tel">నమస్కారం! మీ టోకెన్ నంబర్ 24. మీ ముందు 6 మంది ఉన్నారు. అంచనా సమయం: 30 నిమిషాలు.</div>
+            <div class="sms-bub-en">Hello! Your token is 24. 6 ahead. Est. 30 mins.</div>
+            <div class="sms-bub-time">9:14 AM · Delivered</div>
+          </div>
+        </div>
+        <div class="sms-bub">
+          <div class="sms-avatar">👤</div>
+          <div class="sms-bubble-content">
+            <div class="sms-bub-from">📱 CLINICOS · 2 patients before your turn</div>
+            <div class="sms-bub-tel">మీ వంతు దగ్గర పడింది! 2 మంది తర్వాత మీ నంబర్. దయచేసి క్లినిక్ చేరుకోండి.</div>
+            <div class="sms-bub-en">Your turn is close! Please head to the clinic now.</div>
+            <div class="sms-bub-time">9:41 AM · Delivered</div>
+          </div>
+        </div>
+        <div class="sms-bub">
+          <div class="sms-avatar">👤</div>
+          <div class="sms-bubble-content">
+            <div class="sms-bub-from">📱 CLINICOS · Your turn has arrived</div>
+            <div class="sms-bub-tel">మీ వంతు వచ్చింది! Token 24 – దయచేసి లోపలికి రండి.</div>
+            <div class="sms-bub-en">Your turn! Token 24 — please come in now.</div>
+            <div class="sms-bub-time">9:48 AM · Delivered</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TECHNOLOGY
+══════════════════════════════════════════ -->
+<section id="tech" class="section">
+  <div class="container">
+    <div class="section-center">
+      <div class="tag tag-green reveal">Technology</div>
+      <h2 class="reveal d1">Built for Indian Healthcare<br><em class="em-green">Realities</em></h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card reveal d1">
+        <div class="tech-icon-wrap">📶</div>
+        <h3>Offline First</h3>
+        <p>Works without internet. All data saves locally on the Android device. Syncs automatically the moment connectivity is restored. No lost data, ever.</p>
+      </div>
+      <div class="tech-card reveal d2">
+        <div class="tech-icon-wrap">🌐</div>
+        <h3>Multi-Language UI</h3>
+        <p>Full interface in Telugu and English. Staff can switch languages anytime. All SMS, labels, and complaint chips are bilingual by default.</p>
+      </div>
+      <div class="tech-card reveal d3">
+        <div class="tech-icon-wrap">📱</div>
+        <h3>No Hardware Required</h3>
+        <p>Works on any Android phone or tablet running Android 8.0+. No special devices, no new purchases. Your staff's current phones are enough.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     PRICING
+══════════════════════════════════════════ -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="section-center">
+      <div class="tag reveal">Pricing</div>
+      <h2 class="reveal d1">Simple, Transparent <em class="em-green">Pricing</em></h2>
+      <p class="reveal d2" style="margin-top:14px;">No hidden fees. No long-term lock-in. Cancel anytime.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="price-card featured reveal d1">
+        <div class="price-badge-top">🎁 Most Popular · First 50 Clinics</div>
+        <div class="price-edition">Clinic Edition</div>
+        <div class="price-amount-row">
+          <span class="price-amount">₹999</span>
+          <span class="price-period">/ month</span>
+        </div>
+        <p class="price-desc">For independent clinics & small practices. First 50 Vijayawada clinics get this rate locked in for life.</p>
+        <div class="price-feats">
+          <div class="price-feat"><span class="check">✓</span>Patient registration</div>
+          <div class="price-feat"><span class="check">✓</span>Queue management</div>
+          <div class="price-feat"><span class="check">✓</span>SMS notifications (Telugu + English)</div>
+          <div class="price-feat"><span class="check">✓</span>Digital prescriptions</div>
+          <div class="price-feat"><span class="check">✓</span>Billing & GST invoices</div>
+          <div class="price-feat"><span class="check">✓</span>Patient history & documents</div>
+          <div class="price-feat"><span class="check">✓</span>30-day free trial</div>
+        </div>
+        <a href="https://wa.me/917330937354?text=I%27d%20like%20to%20start%20the%2030-day%20free%20trial%20for%20ClinicOS%20Clinic%20Edition" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;">Start Free Trial →</a>
+      </div>
+
+      <div class="price-card reveal d2">
+        <div class="price-edition">Hospital Edition</div>
+        <div class="price-amount-row">
+          <span class="price-amount" style="font-size:2.2rem;">₹2,999</span>
+          <span class="price-period">/ month</span>
+        </div>
+        <p class="price-desc">For government & multi-department hospitals. Pricing scales with number of OPD counters.</p>
+        <div class="price-feats">
+          <div class="price-feat"><span class="check">✓</span>Patient registration</div>
+          <div class="price-feat"><span class="check">✓</span>Multi-department queue (3 counters)</div>
+          <div class="price-feat"><span class="check">✓</span>SMS notifications (Telugu + English)</div>
+          <div class="price-feat"><span class="check">✓</span>Doctor's Assistant screen</div>
+          <div class="price-feat"><span class="check">✓</span>Analytics dashboard</div>
+          <div class="price-feat"><span class="check">✓</span>Offline mode</div>
+          <div class="price-feat"><span class="cross">✗</span>Billing & prescriptions (separate)</div>
+        </div>
+        <a href="https://wa.me/917330937354?text=I%27m%20interested%20in%20ClinicOS%20Hospital%20Edition%20pricing" target="_blank" class="btn btn-outline" style="width:100%;justify-content:center;">Get Custom Quote →</a>
+        <p class="price-note">* SMS charges billed separately at actual gateway cost</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════ -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="section-center">
+      <div class="tag reveal">Testimonials</div>
+      <h2 class="reveal d1">Trusted by Healthcare Providers<br>Across <em class="em-green">Andhra Pradesh</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal d1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">ClinicOS reduced our waiting area crowd by 60%. Patients are happier because they can step out and get SMS alerts when their turn comes. Our reception staff is less stressed too.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Receptionist, GGH Vijayawada</div>
+            <div class="testi-role">Government General Hospital · Vijayawada</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal d2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">The Telugu SMS feature is a game-changer. Our patients finally understand the queue system. Before ClinicOS, we had constant confusion. Now the hall is calm and organised.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div>
+            <div class="testi-name">Medical Officer, Vijayawada</div>
+            <div class="testi-role">Primary Health Centre · Krishna District</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal d3">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Setup was done in under 30 minutes. No new hardware needed — we used our existing Android phones. The billing and prescription features alone save us 2 hours every day.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">D</div>
+          <div>
+            <div class="testi-name">Dr. Prakash Rao</div>
+            <div class="testi-role">Labbipet Clinic · Vijayawada</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal d4">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">We handle 150+ patients daily. Before ClinicOS, it was chaos. Now our receptionist handles registration smoothly and patients don't crowd the entrance. Highly recommend.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Admin, Benz Circle Hospital</div>
+            <div class="testi-role">Multi-specialty Clinic · Vijayawada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-inner">
+
+      <div class="contact-left">
+        <div class="tag reveal">Contact</div>
+        <h2 class="reveal d1" style="color:var(--cream);">Get in <em class="em-amber">Touch</em></h2>
+        <p class="reveal d2" style="color:rgba(255,255,255,0.4);margin-top:14px;">We're based in Vijayawada and respond to every query personally. Reach out via WhatsApp for the fastest response.</p>
+
+        <div class="contact-links reveal d3">
+          <a href="https://wa.me/917330937354" class="contact-link-row" target="_blank">
+            <div class="contact-link-icon">💬</div>
+            <div>
+              <div class="contact-link-label">WhatsApp</div>
+              <div class="contact-link-val">+91 73309 37354</div>
+            </div>
+          </a>
+          <a href="mailto:contact@codingrippler.com" class="contact-link-row">
+            <div class="contact-link-icon">✉️</div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-val">contact@codingrippler.com</div>
+            </div>
+          </a>
+          <a href="https://www.codingrippler.com" class="contact-link-row" target="_blank">
+            <div class="contact-link-icon">🌐</div>
+            <div>
+              <div class="contact-link-label">Website</div>
+              <div class="contact-link-val">www.codingrippler.com</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=Vijayawada,Andhra+Pradesh" class="contact-link-row" target="_blank">
+            <div class="contact-link-icon">📍</div>
+            <div>
+              <div class="contact-link-label">Address</div>
+              <div class="contact-link-val">Vijayawada, Andhra Pradesh</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right reveal d2">
+        <div class="contact-form">
+          <h3>Send us a message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="f-name">Your Name</label>
+              <input type="text" id="f-name" placeholder="Dr. Ramesh Kumar">
+            </div>
+            <div class="form-group">
+              <label for="f-phone">Phone Number</label>
+              <input type="tel" id="f-phone" placeholder="+91 98765 43210">
+            </div>
+            <div class="form-group">
+              <label for="f-type">Facility Type</label>
+              <select id="f-type">
+                <option value="Hospital">Hospital</option>
+                <option value="Clinic">Clinic / Private Practice</option>
+                <option value="PHC">PHC / Government Facility</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="f-msg">Message (optional)</label>
+              <textarea id="f-msg" placeholder="Tell us about your facility and what you need…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-amber form-submit">Send Message →</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FINAL CTA
+══════════════════════════════════════════ -->
+<section id="cta-final">
+  <div class="container">
+    <div class="cta-final-inner">
+      <h2 class="reveal">Ready to Transform Your<br>Patient Flow?</h2>
+      <p class="reveal d1">Join 50+ healthcare facilities across Andhra Pradesh using ClinicOS</p>
+      <div class="cta-final-btns reveal d2">
+        <a href="https://wa.me/917330937354?text=Hi%2C%20I%20want%20to%20schedule%20a%20free%20ClinicOS%20demo" target="_blank" class="btn btn-amber btn-lg">Schedule Free Demo →</a>
+        <a href="https://wa.me/917330937354?text=I%27d%20like%20to%20start%20the%20ClinicOS%20free%20trial" target="_blank" class="btn btn-ghost btn-lg">Start 14-Day Free Trial</a>
+      </div>
+      <a href="#contact" class="cta-final-link reveal d3">Or contact us directly ↓</a>
+      <div class="cta-trust-chips reveal d4">
+        <span class="cta-chip">No hardware needed</span>
+        <span class="cta-chip">Setup in 30 minutes</span>
+        <span class="cta-chip">Telugu support available</span>
+        <span class="cta-chip">Cancel anytime</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Clinic<em>OS</em></h3>
+        <p>Digital OPD queue management for hospitals and clinics across Andhra Pradesh. Built with ❤️ in Vijayawada.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" title="LinkedIn">in</a>
+          <a href="#" class="social-icon" title="Twitter">𝕏</a>
+          <a href="#" class="social-icon" title="YouTube">▶</a>
+          <a href="#" class="social-icon" title="GitHub">⌥</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#editions">Hospital Edition</a></li>
+          <li><a href="#editions">Clinic Edition</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#solution">Features</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">DPDPA Compliance</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 CodingRippler Tech Private Limited. All rights reserved. Vijayawada, Andhra Pradesh.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Refunds</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════
+     WHATSAPP WIDGET
+══════════════════════════════════════════ -->
+<div id="wa-widget">
+  <div id="wa-tooltip">Chat with us on WhatsApp 👋</div>
+
+  <div id="wa-panel">
+    <div id="wa-head">
+      <button id="wa-close" onclick="waToggle()">✕</button>
+      <div class="wa-avatar-head">🏥</div>
+      <div>
+        <div class="wa-name">ClinicOS Support</div>
+        <div class="wa-online"><span class="wa-online-dot"></span> Typically replies in minutes</div>
+      </div>
+    </div>
+
+    <div id="wa-chat">
+      <div class="wm bot">
+        <div class="wm-bub">
+          నమస్కారం! 👋 Welcome to <strong>ClinicOS</strong>.
+          <div class="wm-time">Now</div>
+        </div>
+      </div>
+      <div class="wm bot">
+        <div class="wm-bub">
+          I'm here to help you digitise your hospital or clinic's OPD queue. How can I help?
+          <div class="wm-time">Now</div>
+        </div>
+      </div>
+      <div id="wa-typing" class="wm h">
+        <div class="ty-bub">
+          <div class="ty-d"></div><div class="ty-d"></div><div class="ty-d"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wa-quick">
+      <button class="qr" onclick="waSendQuick('I want to book a demo')">📅 Book Demo</button>
+      <button class="qr" onclick="waSendQuick('Tell me about Hospital Edition')">🏥 Hospital</button>
+      <button class="qr" onclick="waSendQuick('Tell me about Clinic Edition')">🩺 Clinic</button>
+      <button class="qr" onclick="waSendQuick('What is the pricing?')">💰 Pricing</button>
+    </div>
+
+    <div id="wa-input-row">
+      <input id="wa-input" placeholder="Type a message…">
+      <button id="wa-send" onclick="waSend()">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="wa-fab" onclick="waToggle()">
+    <div id="wa-badge">1</div>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
